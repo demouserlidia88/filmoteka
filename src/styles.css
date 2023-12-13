@@ -115,6 +115,22 @@ body.is-open {
     margin-top: 10px;
     padding-left: 10px;
 }
+.sociallinks {
+    border-radius: 50%;
+    padding: 10px;
+}
+.sociallinks_icon {
+    fill: #000;
+}
+.sociallinks:hover,
+.sociallinks:focus,
+.sociallinks_icon:hover,
+.sociallinks_icon:focus,
+.icon_link svg:hover, 
+.icon_link svg:focus {
+   fill: #B92F2C;
+   filter: invert(36%) sepia(25%) saturate(3665%) hue-rotate(333deg) brightness(74%) contrast(99%);
+}
 
 .lightbox_button,.icon  {
     position: absolute;
@@ -187,13 +203,7 @@ img {
     padding-top: 4px;
 }
 
-.sociallinks {
-    border-radius: 50%;
-    padding: 10px;
-}
-.sociallinks__icon {
-    fill: #000;
-}
+
 
 /* MEDIA */
 
