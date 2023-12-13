@@ -54,40 +54,28 @@ ul {
 
 /* MODAL */
 
-.modal {
-	width: 528px;
-	height: 581px;
-	background-color: #FFFFFF;
-	border-radius: 4px;
-	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-		0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-	position: absolute;
-	transform: scale(1);
-	transition: 2500ms linear;
-}
 
-
-  
 .is-hidden {
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
-	transition: 2500ms linear;
+	
 }
-
-
 
 body.is-open {
     overflow: hidden;
+    transition: 2500ms linear;
+    
 }
 .js-lightbox.is-open .lightbox_list {
     transform: scale(1);
+    transition: 2500ms linear;
 }
 .lightbox.is-open {
     opacity: 1;
     pointer-events: auto;
+    transition: 2500ms linear;
 }
-
 .lightbox {
     position: fixed;
     width: 100%;
@@ -95,9 +83,9 @@ body.is-open {
     background-color: rgba(0,0,0,.56);
     top: 0;
     left: 0;
-  
     overflow: auto;
     pointer-events: none;
+    
 }
 .lightbox_title {
     font-family: Roboto,sans-serif;
@@ -118,6 +106,7 @@ body.is-open {
     position: relative;
     border-radius: 4px;
 }
+
 .lightbox_fourrowel {
     display: flex;
     justify-content: space-around;
@@ -128,7 +117,8 @@ body.is-open {
     margin-top: 10px;
     padding-left: 10px;
 }
-.lightbox_button {
+
+.lightbox_button,.icon  {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -151,36 +141,24 @@ body.is-open {
 }
 .icon {
     display: inline-block;
-    width: 1em;
-    height: 1em;
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
 }
 
-.lightbox_fourrowel {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #fff;
-    box-shadow: 0 3px 1px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.08), 0 2px 2px rgba(0,0,0,.12);
-    border-radius: 0 0 4px 4px;
-    margin-top: 10px;
-    padding-left: 10px;
+
+.lightbox_button:hover,
+.lightbox_button:focus {
+	fill: #000000;
+}
+.icon:hover,
+.icon:focus {
+	fill: #B92F2C;
 }
 
-button, select {
-    text-transform: none;
-}
 
-button, input, optgroup, select, textarea {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-}
 .lightbox_img {
-    border-radius: 50%;
+    border-radius: 5%;
     border: 2px solid #B92F2C;
 }
 img {
@@ -218,15 +196,6 @@ img {
 .sociallinks__icon {
     fill: #000;
 }
-/**
-svg[Attributes Style] {
-    height: 20;
-    width: 20;
-} **/
-
-:not(svg) {
-    transform-origin: 0px 0px;
-}
 
 /* MEDIA */
 
@@ -254,7 +223,7 @@ svg[Attributes Style] {
     .footer_heart {
         margin: 3.5px 10px 0;
     }
-    .lightbox__body {
+    .lightbox_body {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -308,7 +277,7 @@ svg[Attributes Style] {
     .footer_heart {
         margin: 3.5px 10px 0;
     }
-    .lightbox__body {
+    .lightbox_body {
         position: absolute;
         top: 50%;
         left: 50%;
