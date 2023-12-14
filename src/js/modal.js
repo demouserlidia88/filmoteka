@@ -10,5 +10,17 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
-  }
+  };
 })();
+const refs = {
+  // ... other references
+  modal: document.querySelector("[data-modal]"),
+};
+
+document.body.addEventListener("click", function(event) {
+  if (event.target.matches("[data-modal-open]")) {
+    toggleModal(`is-open`);
+  } else if (event.target.matches("[data-modal-close]")) {
+    toggleModal("is-hidden");
+  }
+});

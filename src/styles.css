@@ -54,7 +54,6 @@ ul {
 
 /* MODAL */
 
-
 .is-hidden {
 	visibility: hidden;
 	opacity: 0;
@@ -64,7 +63,7 @@ body.is-open {
     overflow: hidden;
     transition: 2500ms linear;
 }
-.js-lightbox.is-open .lightbox_list {
+.js-lightbox.is-open {
     transform: scale(1);
     transition: 2500ms linear;
 }
@@ -120,16 +119,41 @@ body.is-open {
     padding: 10px;
 }
 .sociallinks_icon {
-    fill: #000;
+    fill: #000; 
 }
+/*  
 .sociallinks:hover,
 .sociallinks:focus,
 .sociallinks_icon:hover,
 .sociallinks_icon:focus,
-.icon_link svg:hover, 
-.icon_link svg:focus {
+*/
+/*    .lightbox_list:hover, 
+.lightbox_list:focus {
+    fill: #B92F2C;
+    cursor: pointer;
+}
+.sociallinks:hover,
+.sociallinks:focus {
+    fill: #B92F2C;
+    cursor: pointer;
+}
+.sociallinks_icon:hover,
+.sociallinks_icon:focus {
+    fill: #B92F2C;
+    cursor: pointer;
+} 
+
+.icon_link:hover, 
+.icon_link:focus {
    fill: #B92F2C;
-   filter: invert(36%) sepia(25%) saturate(3665%) hue-rotate(333deg) brightness(74%) contrast(99%);
+   cursor: pointer;
+}*/
+
+.lightbox .icon_link:hover
+.icon_link:focus {
+   fill: #B92F2C;
+   cursor: pointer;
+
 }
 
 .lightbox_button,.icon  {

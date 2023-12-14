@@ -25,9 +25,7 @@
         <a data-modal-open="#modal"href="#" class="footer_text js-footer_text">GoIT Students</a>
        </p>
       </div>
-      
-      <div class="lightbox js-lightbox is-hidden"data-modal >
-         
+      <div class="lightbox js-lightbox is-hidden"data-modal>
             <div class="lightbox_body">
               <div class="lightbox_content">
                 <h3 class="lightbox_title">The project was made by:</h3>
@@ -135,21 +133,23 @@
                   
                   </li>
                 </ul>
-      
-                <button type="button" class="lightbox_button"data-modal-close></button>
-                 <svg class="icon">
-                  <use href="./icons/symbol-defs.svg#icon-close-button" ></use>
-                 </svg>
 
-
+                
+                   <div class="modal">
+                         <button type="button" class="lightbox_button" data-modal="close-lightbox" aria-label="close-button" data-modal-close></button>
+                              <svg class="icon">
+                              <use href="./icons/symbol-defs.svg#icon-close-button"></use>
+                              </svg>
+                   </div>
               </div>
-              
-            </div>
 
+
+            </div>
+            
       </div>
-      
     </div>
 </footer>
 <script src="./js/modal.js"></script>
+
 </body>
 </html>
