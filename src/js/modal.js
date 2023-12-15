@@ -19,8 +19,8 @@ const refs = {
 
 document.body.addEventListener("click", function(event) {
   if (event.target.matches("[data-modal-open]")) {
-    toggleModal(`is-open`);
+    toggleModal("open-lightbox");
   } else if (event.target.matches("[data-modal-close]")) {
-    toggleModal("is-hidden");
+    toggleModal("close-lightbox");
   }
 });

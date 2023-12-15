@@ -121,39 +121,20 @@ body.is-open {
 .sociallinks_icon {
     fill: #000; 
 }
-/*  
+/*.lightbox_fourrowel:hover,
+.lightbox_fourrowel:focus,
+.lightbox_list:hover,
+.lightbox_list:focus,
 .sociallinks:hover,
 .sociallinks:focus,
 .sociallinks_icon:hover,
-.sociallinks_icon:focus,
-*/
-/*    .lightbox_list:hover, 
-.lightbox_list:focus {
-    fill: #B92F2C;
-    cursor: pointer;
-}
-.sociallinks:hover,
-.sociallinks:focus {
-    fill: #B92F2C;
-    cursor: pointer;
-}
-.sociallinks_icon:hover,
-.sociallinks_icon:focus {
-    fill: #B92F2C;
-    cursor: pointer;
-} 
-
-.icon_link:hover, 
-.icon_link:focus {
+.sociallinks_icon:focus,*/
+.icon_link:hover,
+.icon_link:focus,
+.svg:hover,
+.svgcon_link:focus{
    fill: #B92F2C;
    cursor: pointer;
-}*/
-
-.lightbox .icon_link:hover
-.icon_link:focus {
-   fill: #B92F2C;
-   cursor: pointer;
-
 }
 
 .lightbox_button,.icon  {
@@ -183,17 +164,25 @@ body.is-open {
     stroke: currentColor;
     fill: currentColor;
 }
-
-
 .lightbox_button:hover,
-.lightbox_button:focus {
-	fill: #000000;
-}
+.lightbox_button:focus,
 .icon:hover,
 .icon:focus {
-	fill: #B92F2C;
+	fill: floralwhite;
 }
 
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+button, select {
+    text-transform: none;
+}
 
 .lightbox_img {
     border-radius: 5%;
